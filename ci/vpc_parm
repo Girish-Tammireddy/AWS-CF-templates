@@ -1,0 +1,34 @@
+{
+    "Parameters": {
+        "EnvironmentName": {
+            "Description": "An environment name that will be prefixed to resource names",
+            "Type": "String"
+        },
+        "VpcCIDR": {
+            "Description": "Please select the IP range (CIDR notation) for this VPC",
+            "Type": "String",
+            "AllowedValues": [
+                "10.180.48.0/22",
+                "10.180.52.0/22",
+                "10.180.56.0/22",
+                "10.180.60.0/22"
+            ]
+        },
+        "PublicSubnet1CIDR": {
+            "Description": "Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone",
+            "Type": "String"
+        },
+        "PublicSubnet2CIDR": {
+            "Description": "Please enter the IP range (CIDR notation) for the public subnet in the second Availability Zone",
+            "Type": "String"
+        },
+        "PrivateSubnet1CIDR": {
+            "Description": "Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone",
+            "Type": "String"
+        },
+        "PrivateSubnet2CIDR": {
+            "Description": "Please enter the IP range (CIDR notation) for the private subnet in the second Availability Zone",
+            "Type": "String"
+        }
+    }
+}
